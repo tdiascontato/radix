@@ -50,6 +50,24 @@
    ```bash
    npm start
    ```
+## 📂 Rotas da API
+
+### `/api/sensors`
+
+- **POST /data**
+  - Recebe dados de sensores.
+- **POST /upload-csv**
+  - Faz upload de um arquivo CSV e processa os dados.
+- **GET /averages**
+  - Retorna médias de dados por período.
+
+### `/api/users`
+
+- **POST /register**
+  - Registra um novo usuário.
+- **POST /login**
+  - Faz login de um usuário existente.
+
 
 ## 🧪 Testes
 
