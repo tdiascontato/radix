@@ -1,0 +1,24 @@
+/*radix/next-radix/src/app/styles/login.module.css*/
+.main_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.form_login {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.backButton_login {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #c5db31;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

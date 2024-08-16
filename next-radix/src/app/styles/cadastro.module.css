@@ -1,0 +1,24 @@
+/*radix/next-radix/src/app/styles/cadastro.module.css*/
+.main_cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.form_cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.backButton_cadastro {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #c5db31;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,44 @@
+/*radix/next-radix/src/app/styles/page.module.css*/
+.main_home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.button_container_home {
+  display: flex;
+  gap: 20px;
+}
+
+.button_home {
+  padding: 20px 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #0070f3;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+.button_logout_home {
+  font-size: 18px;
+  border: none;
+  color: black;
+  text-decoration: underline;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 1s ease;
+}
+
+.button_logout_home:hover {
+  transition: 1s ease;
+  color: #780101;
+}
