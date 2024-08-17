@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./next-radix
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./node-radix
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    environment:
+      MONGO_URI: mongodb://mongo:27017/radixdb
+    volumes:
+      - ./node-radix/data:/app/data
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:4.4
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongo-data:/data/db
