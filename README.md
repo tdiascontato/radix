@@ -21,35 +21,29 @@
 
 ## 🚀 Instalação e Execução
 
-### Front-End (Next.js)
+### Usando Docker
 
-1. **Instale as dependências:**
+Para facilitar a configuração do ambiente e garantir consistência, você pode utilizar Docker para rodar tanto o front-end quanto o back-end.
 
-   ```bash
-   cd next-radix
-   npm install
-   ```
-
-2. **Inicie o servidor de desenvolvimento:**
+1. **Construir e iniciar os containers:**
 
    ```bash
-   npm run dev
+   docker-compose up --build
    ```
 
-### Back-End (Node.js)
-
-1. **Instale as dependências:**
-
+2. **Subir os containers já construídos:**
    ```bash
-   cd node-radix
-   npm install
+   docker-compose up
    ```
 
-2. **Inicie o servidor:**
-
+### Requisição para Upload de CSV
+Para fazer upload de um arquivo CSV e inserir os dados no banco de dados, utilize o comando curl abaixo:
    ```bash
-   npm start
+   curl -X POST http://localhost:4000/api/sensors/upload-csv \
+  -H "Content-Type: multipart/form-data" \
+  -F "file=@/csv/sensors.csv"
    ```
+
 ## 📂 Rotas da API
 
 ### `/api/sensors`
